@@ -46,7 +46,7 @@ div#board-item-2 {
 }
 
 div#board-item-3 {
-    position: re;
+    position: relative;
     width: 415px;
     height: 648px;
     background-color: #fff;
