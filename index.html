@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board design | 👨‍💻</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Muli:wght@1000&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div id="board-container">
+            <div id="board-item-1" class="box-shadow-class">
+                <div id="item-1">
+                    <img src="resources/Clock.png" alt="clock-icon" width="28px" height="28px"
+                        class="board-item-1-logo clock">
+                    <p class="text">12 min read</p>
+                </div>
+                <div id="item-2">
+                    <img src="resources/Tag.png" alt="tag-icon" width="28px" height="28px"
+                        class="board-item-1-logo tag">
+                    <p class="text">Ethics | Design patterns | User Experience</p>
+                </div>
+                <div id="item-3">
+                    <img src="resources/Share.png" alt="share-icon" width="28px" height="28px"
+                        class="board-item-1-logo share">
+                    <p class="text">Share on <a href="https://twitter.com/login">Twitter</a> or <a
+                            href="https://www.facebook.com/">Facebook</a>
+                    </p>
+                </div>
+            </div>
+            <div id="board-item-2" class="box-shadow-class">
+                <p class="text board-item-2-text">We care about your data, and we'd use cookies only to improve your
+                    experience. <a href=""> Privacy settings & policy.</a></p>
+                <button type="button">Submit</button>
+                <button type="button" class="thanks-button">No,thanks.</button>
+            </div>
+            <div id="board-item-3" class="box-shadow-class">
+                <img src="resources/Close.png" alt="close-icon" width="18" height="18" id="close">
+                <p class="board-item-3-text">Before you go, we would like to know why you decided not to sign up today.
+                </p>
+                <div class="radio-buttons">
+                    <!-- <label for="first-option">
+                       <span class="board-item-3-radio-options">The price was too high.</span> 
+                        <input type="radio" name="reason-for-not-signing-up">
+                        <span class="radio-checkmark"></span>
+                    </label>
+                    <label for="second-option">
+                        <span class="board-item-3-radio-options">The price was too high.</span> 
+                        <input type="radio" checked="checked" name="reason-for-not-signing-up">
+                        <span class="radio-checkmark"></span>
+                    </label>
+                    <label for="third-option">
+                        <span class="board-item-3-radio-options">The price was too high.</span> 
+                        <input type="radio" name="reason-for-not-signing-up">
+                        <span class="radio-checkmark"></span>
+                    </label> -->
+                    <label class="container"><span class="options-for-not-signing-up">The price was too high.</span>
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container"> <span class="options-for-not-signing-up">It didn’t do what I
+                            needed.</span>
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container"><span class="options-for-not-signing-up">The site felt
+                            untrustworthy.</span>
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div id="text-box-area">
+                    <p>Other</p>
+                    <textarea name="other-info" id="other-info-text-area" cols="30" rows="10"></textarea>
+                    <button type="button" class="board-item-3-submit-button">Submit</button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

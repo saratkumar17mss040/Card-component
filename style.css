@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    background-color: #F2F5FD;
+    height: 100%;
+    font-family: 'Muli', sans-serif;
+}
+
+main {
+    /* position: relative; */
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+    /* short-hand property - flex-flow */
+    /* flex-flow: column nowrap; */
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+div#board-container {
+    width: 759px;
+    height: 648px;
+}
+
+div#board-item-1 {
+    display: grid;
+    grid-template-columns: auto;
+    position: relative;
+    width: 314px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+div#board-item-2 {
+    width: 314px;
+    height: 291px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+div#board-item-3 {
+    position: re;
+    width: 415px;
+    height: 648px;
+    background-color: #fff;
+    margin-left: 345px;
+    margin-top: -555px;
+    border-radius: 15px;
+    /* position: absolute; */
+    /* right: 197px;
+    top: 37px; */
+}
+
+.box-shadow-class {
+    -webkit-box-shadow: 0px 5px 7px 3px rgba(242,242,242,1);
+    -moz-box-shadow: 0px 5px 7px 3px rgba(242,242,242,1);
+    box-shadow: 0px 5px 7px 3px rgba(226, 226, 226,1);
+}
+
+.board-item-1-logo {
+    position: absolute;
+    left: 20px;
+}
+
+.clock {
+    top:20px;
+}
+
+.tag {
+    top: 100px;
+}
+
+.share {
+    top: 180px;
+}
+
+.text {
+    margin-left: 75px;
+    margin-top: 22px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+a {
+    color: #507DF1;
+}
+
+.board-item-2-text {
+    position: absolute;
+    line-height: 150%;
+    width: 213px;
+    margin-left: 36px;
+    margin-top: 15px;
+    /* or
+    line-height: 21px;
+    */
+}
+
+button {
+    font-family: 'Muli',sans-serif;
+    position: absolute;
+    color: #ffffff;
+    background-color:  #6992FF;
+    font-weight: bold;
+    width: 254px;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 16px;
+    margin-left: 28px;
+    margin-top: 145px;
+    text-align: center; 
+    border: none;
+}
+/*tried overriding button style using thanks-button
+but not working   */
+button.thanks-button {
+    background-color: #ffffff;
+    /* border-color: #6992FF; */
+    color: #6992FF;
+    font-family: 'Muli',sans-serif;
+    position: absolute;
+    width: 254px;
+    border-radius: 8px;
+    padding: 15px;
+    margin-left: 28px;
+    margin-top: 205px;
+    text-align: center;
+    border: 2px solid #6992FF; 
+}
+
+#close {
+    margin-left: 370px;
+    margin-top: 20px;
+}
+
+/* .radio-buttons {
+    position: absolute;
+    text-align: center;
+} */
+
+
+/*
+ div.radio-buttons  > label {
+    /* padding: 20px;
+    background-color: #F2F5FD;
+    border-radius: 3px; 
+    position: relative;
+    display: block;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    top:5px;
+    background: #F2F5FD;
+    border-radius: 3px;
+    width: 317px;
+    height: 66px;
+    margin-left: 40px;
+    margin-bottom: 15px;
+    /* margin-top: 50px; 
+
+} 
+
+.radio-buttons input {
+    position: absolute;
+    opacity: 1;
+    margin-top: 9px;
+    cursor: pointer;
+}
+
+.radio-checkmark {
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.board-item-3-radio-options {
+    position: absolute;
+    left: 75px;
+    text-align: center;
+    bottom: 1px;
+}
+*/
+
+.board-item-3-text {
+    font-size: 18px;
+    line-height: 150%;
+    width: 325px;
+    height: 54px;
+    text-align: center;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-left: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    /* 
+    line-height: 150%;
+    */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #F2F5FD;
+    border-radius: 3px;
+    width: 317px;
+    height: 66px;
+    text-align: center;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    margin-left: 15px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid #A2B5E8;
+    box-sizing: border-box;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #ffffff;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+      top: 4px;
+      left: 4px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #6992FF;
+  }
+
+.options-for-not-signing-up {
+    display: block;
+    position: absolute;
+    margin-top: 19px;
+    margin-left: 40px;
+  }
+
+#text-box-area {
+    display: block;
+    position: relative;
+    width: 319px;
+    height: 250px;
+    margin-left: 40px;
+}
+
+textarea {
+    margin-top: 10px;
+    border: 2px solid #A2B5E8;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 325px;
+    height: 101px;
+}
+
+.board-item-3-submit-button {
+    width: 325px;
+    height: 66px;
+    margin: 0px;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+
+
+
+
+
+
+
+
